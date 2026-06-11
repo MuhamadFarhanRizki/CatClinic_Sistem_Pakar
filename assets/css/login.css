@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    overflow: hidden;
+}
+
+/* LOGIN BOX */
+.login-container {
+    width: 320px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    margin: 80px auto;
+    color: #111;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 2;
+}
+
+/* CAT LOGO */
+.cat-logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* PASSWORD BOX */
+.password-box {
+    position: relative;
+}
+
+.password-box .eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* BUTTON LOGIN */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(13, 13, 13);
+    cursor: pointer;
+    background: linear-gradient(90deg, #ffffff, #f59e0b);
+    font-weight: bold;
+}
+
+/* BACK HOME */
+.back-home {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f59e0b;
+    text-decoration: none;
+}
+
+/* ERROR */
+.error {
+    color: red;
+}
+
+/* ORANGE CIRCLES */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: move 8s infinite ease-in-out;
+}
+
+.circle.one {
+    width: 180px;
+    height: 180px;
+    background: #f59e0b;
+    top: 10%;
+    left: 10%;
+}
+
+.circle.two {
+    width: 140px;
+    height: 140px;
+    background: #f59e0b;
+    bottom: 10%;
+    right: 10%;
+}
+
+.circle.three {
+    width: 100px;
+    height: 100px;
+    background: #f59e0b;
+    top: 50%;
+    left: 70%;
+}
+
+@keyframes move {
+    0% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.2) translateY(-20px); }
+    100% { transform: scale(1) translateY(0); }
+}

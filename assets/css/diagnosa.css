@@ -1,0 +1,168 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fffdf8;
+}
+
+
+/* ===================================
+   HEADER
+=================================== */
+
+.header{
+    padding:25px 80px;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header h1{
+    color:#1f2937;
+    margin-top:10px;
+}
+
+.back-btn{
+    text-decoration:none;
+    color:#f59e0b;
+    font-weight:600;
+}
+
+
+/* ===================================
+   CONTAINER
+=================================== */
+
+.container{
+    width:90%;
+    margin:40px auto;
+}
+
+
+/* ===================================
+   CARD IDENTITAS
+=================================== */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.form-area{
+    width:55%;
+}
+
+.form-area h2{
+    margin-bottom:20px;
+    color:#1f2937;
+}
+
+.form-area label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:500;
+}
+
+.form-area input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.form-area input:focus{
+    outline:none;
+    border:1px solid #f59e0b;
+}
+
+
+/* ===================================
+   GAMBAR
+=================================== */
+
+.image-area{
+    width:40%;
+    text-align:center;
+}
+
+.image-area img{
+    width:320px;
+}
+
+
+/* ===================================
+   GEJALA
+=================================== */
+
+.gejala-box{
+    margin-top:40px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.gejala-box h2{
+    margin-bottom:20px;
+}
+
+.gejala-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.checkbox-item{
+    background:#fff7ed;
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #fcd34d;
+    cursor:pointer;
+}
+
+.checkbox-item:hover{
+    background:#ffedd5;
+}
+
+.checkbox-item input{
+    margin-right:10px;
+}
+
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.button-area{
+    text-align:center;
+    margin-top:30px;
+}
+
+.btn-diagnosa{
+    background:#f59e0b;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.btn-diagnosa:hover{
+    background:#d97706;
+}

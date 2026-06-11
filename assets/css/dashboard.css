@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+
+/* BACKGROUND CIRCLE ORANGE */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.25;
+    animation: move 8s infinite ease-in-out;
+}
+
+.circle.one {
+    width: 180px;
+    height: 180px;
+    background: #f59e0b;
+    top: 10%;
+    left: 10%;
+}
+
+.circle.two {
+    width: 140px;
+    height: 140px;
+    background: #f59e0b;
+    bottom: 10%;
+    right: 10%;
+}
+
+.circle.three {
+    width: 100px;
+    height: 100px;
+    background: #f59e0b;
+    top: 50%;
+    left: 70%;
+}
+
+@keyframes move {
+    0% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.2) translateY(-20px); }
+    100% { transform: scale(1) translateY(0); }
+}
+
+/* DASHBOARD CONTAINER */
+.dashboard-container {
+    width: 90%;
+    margin: 50px auto;
+    color: #111;
+    position: relative;
+    z-index: 2;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* TOP BOX */
+.top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* CARD TOTAL */
+.card-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-left: 5px solid #f59e0b;
+}
+
+.card-box h2 {
+    margin: 0;
+    font-size: 40px;
+    color: #f59e0b;
+}
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo-kesehatan {
+    width: 70px;
+    height: 70px;
+}
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* BUTTON BACK */
+.btn-back {
+    background: #f59e0b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* BUTTON PDF */
+.btn-laporan {
+    background: linear-gradient(90deg, #f59e0b);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: rgb(255, 249, 249);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-laporan:hover {
+    transform: scale(1.05);
+}
+
+/* TABLE */
+.table-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #f59e0b;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
